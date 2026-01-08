@@ -1,16 +1,36 @@
-# React + Vite
+# 🎮 Tic Tac Toe — React + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and interactive **Tic Tac Toe game** built using **React** and **Tailwind CSS**.  
+This project focuses on **state-driven UI**, **game logic correctness**, and **clean React patterns**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- ✅ Turn-based gameplay (X vs O)
+- 🏆 Winner detection using predefined winning combinations
+- 🤝 Tie detection when the board is full
+- 🚫 Prevents invalid moves
+- 🔒 Disables board interaction after game ends
+- 🔄 Restart game functionality
+- 🎨 Minimal, modern UI using Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Game Logic Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- The board state is stored as an array of cell objects
+- Each move updates the board immutably
+- Winner is calculated by checking all possible winning combinations
+- Tie is detected when all cells are filled and no winner exists
+- UI reacts purely based on state (no manual DOM manipulation)
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** (Hooks: `useState`, `useEffect`)
+- **JavaScript (ES6+)**
+- **Tailwind CSS**
+
+open your browser and visit: https://fancy-fenglisu-16dc3f.netlify.app/
