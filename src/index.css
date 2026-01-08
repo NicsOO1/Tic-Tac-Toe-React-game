@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Gamja Flower", sans-serif;
+}
+
+#container {
+  background: url('./assets/bg.mp4');
+}
